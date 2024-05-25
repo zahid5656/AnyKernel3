@@ -21,8 +21,8 @@ device.name1=maguro
 device.name2=toro
 device.name3=toroplus
 device.name4=tuna
-supported.versions=6.0 - 7.1.2
-supported.patchlevels=2019-07 -
+supported.versions=11.0-14.0
+supported.patchlevels=2019-07
 supported.vendorpatchlevels=2013-07
 
 BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
