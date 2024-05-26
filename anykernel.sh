@@ -11,12 +11,12 @@ do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=samurai
-device.name2=RMX1933
-device.name3=
+device.name2=RMX1931
+device.name3=RMX1931CN
 device.name4=
-supported.versions=11.0-14.0
+supported.versions=
 supported.patchlevels=
-supported.vendorpatchlevels=S
+supported.vendorpatchlevels=
 '; } # end properties
 
 # boot shell variables
