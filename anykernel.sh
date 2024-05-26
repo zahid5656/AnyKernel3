@@ -13,7 +13,6 @@ do.cleanuponabort=0
 device.name1=samurai
 device.name2=RMX1931
 device.name3=RMX1931CN
-device.name4=
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
