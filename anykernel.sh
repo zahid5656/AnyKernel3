@@ -14,8 +14,6 @@ device.name1=samurai
 device.name2=RMX1931
 device.name3=RMX1931CN
 supported.versions=
-supported.patchlevels=
-supported.vendorpatchlevels=
 '; } # end properties
 
 # boot shell variables
@@ -27,19 +25,24 @@ ramdisk_compression=auto;
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh;
 
+# AnyKernel file attributes
+# set permissions/ownership for included ramdisk files
+#set_perm_recursive 0 0 755 644 $ramdisk/*;
+#set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
+
 ## AnyKernel boot install
 split_boot;
 
 flash_boot;
 flash_dtbo;
 
-## AnyKernel file attributes
-# set permissions/ownership for included ramdisk files
-#set_perm_recursive 0 0 755 644 $ramdisk/*;
-#set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 ## AnyKernel boot install
 #dump_boot;
 #write_boot;
 
 ## end install
+
+sleep 3
+ui_print ""
+ui_print "kernel installed successfully"
