@@ -43,6 +43,6 @@ flash_dtbo;
 
 ## end install
 
-sleep 3
+sleep 1
 ui_print ""
 ui_print "kernel installed successfully"
