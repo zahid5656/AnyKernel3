@@ -2,7 +2,7 @@
 ##         Realme X2 Pro Kernel Installer        ##
 ###################################################
 Kernel:     Final Build
-Version:    4.14.346-openela-KSU+
+Version:    4.14.348-openela-KSU+
 Author:     ZAHID
 Device:     Realme X2 Pro (Samurai/RMX1931)
 OS:         LineageOS Based Any ROM
