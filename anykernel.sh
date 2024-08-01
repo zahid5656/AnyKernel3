@@ -17,10 +17,10 @@ supported.versions=
 '; } # end properties
 
 # boot shell variables
-block=/dev/block/by-name/boot;
-is_slot_device=0;
-ramdisk_compression=auto;
-#patch_vbmeta_flag=auto;
+BLOCK=/dev/block/by-name/boot;
+IS_SLOT_DEVICE=0;
+RAMDISK_COMPRESSION=auto;
+#PATCH_VBMETA_FLAG=auto;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh;
@@ -37,6 +37,5 @@ flash_dtbo;
 ## end install
 
 sleep 1
-ui_print " "
 ui_print "DONE!"
 ui_print "Kernel Installed Successfully !!!"
