@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=HyperTeam Openela Kernel for Realme X2 Pro
+kernel.string=Openela-LTS Kernel for Realme X2 Pro
 do.devicecheck=1
 do.modules=0
 do.systemless=1
