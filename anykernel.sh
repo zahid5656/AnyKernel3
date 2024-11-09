@@ -4,10 +4,10 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=OpenELA-LTS Kernel for Realme X2 Pro
+kernel.string=OpenELA-LTS NetHunter Kernel for Realme X2 Pro
 do.devicecheck=1
-do.modules=0
-do.systemless=1
+do.modules=1
+do.systemless=0
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=samurai
@@ -17,8 +17,8 @@ supported.versions=
 '; } # end properties
 
 # boot shell variables
-BLOCK=/dev/block/by-name/boot;
-IS_SLOT_DEVICE=0;
+BLOCK=auto;
+IS_SLOT_DEVICE=auto;
 RAMDISK_COMPRESSION=auto;
 #PATCH_VBMETA_FLAG=auto;
 
@@ -26,16 +26,16 @@ RAMDISK_COMPRESSION=auto;
 . tools/ak3-core.sh;
 
 ## AnyKernel boot install
-split_boot;
-flash_boot;
-flash_dtbo;
+#split_boot;
+#flash_boot;
+#flash_dtbo;
 
 ## AnyKernel boot install
-#dump_boot;
-#write_boot;
-
-## end install
+dump_boot;
+write_boot;
 
 sleep 1
 ui_print "DONE!"
 ui_print "Kernel Installed Successfully !!!"
+
+## end install
