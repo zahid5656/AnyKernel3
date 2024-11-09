@@ -5,7 +5,7 @@
 # global properties
 properties() { '
 kernel.string=OpenELA-LTS NetHunter Kernel for Realme X2 Pro
-do.devicecheck=1
+do.devicecheck=0
 do.modules=1
 do.systemless=0
 do.cleanup=1
