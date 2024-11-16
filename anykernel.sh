@@ -34,8 +34,8 @@ flash_dtbo;
 #dump_boot;
 #write_boot;
 
-## end install
-
 sleep 1
 ui_print "DONE!"
 ui_print "Kernel Installed Successfully !!!"
+
+## end install
