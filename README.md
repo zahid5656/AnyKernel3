@@ -11,19 +11,19 @@ _A script based on Galaxy Nexus (tuna) is included for reference. Everything to 
 
 ## // Properties / Variables ##
 ```
-kernel.string=Hyper Kernel for Realme X2 Pro
+kernel.string=KernelName by YourName @ xda-developers
 do.devicecheck=1
 do.modules=1
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=samurai
-device.name2=RMX1931
-device.name3=
-device.name4=
-supported.versions=11.0-14.0
-supported.patchlevels=
-supported.vendorpatchlevels=
+device.name1=maguro
+device.name2=toro
+device.name3=toroplus
+device.name4=tuna
+supported.versions=6.0 - 7.1.2
+supported.patchlevels=2019-07 -
+supported.vendorpatchlevels=2013-07
 
 BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
 IS_SLOT_DEVICE=0;
@@ -60,6 +60,8 @@ __supported.patchlevels=__ and __supported.vendorpatchlevels=__ will match again
 `NO_BLOCK_DISPLAY=1` may be added to disable output of the detected final used partition+slot path for zips which choose to include their own custom output instead.
 
 `NO_MAGISK_CHECK=1` may be added to disable detection of Magisk and related kernel/dtb repatching for special zips which don't require that.
+
+`NO_VBMETA_PARTITION_PATCH=1` may be added to skip vbmeta processing using httools, since GKI is bootable with verity/verification ON, as long as AVB is not enforced for boot stage partitions.
 
 ## // Command Methods ##
 ```
