@@ -20,7 +20,7 @@ supported.patchlevels=
 BLOCK=/dev/block/by-name/boot;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
-#PATCH_VBMETA_FLAG=auto;
+PATCH_VBMETA_FLAG=auto;
 
 # import functions/variables and setup patching - DO NOT REMOVE
 . tools/ak3-core.sh;
@@ -31,10 +31,16 @@ ui_print " Realme X2 Pro / Samurai"
 ui_print " KernelSU-Next Test Build"
 ui_print "*******************************"
 
-## AnyKernel boot install
-split_boot;
-flash_boot;
-flash_dtbo;
+ui_print "- Dumping current boot image..."
+dump_boot;
+
+ui_print "- Flashing kernel while preserving ROM ramdisk..."
+write_boot;
+
+# IMPORTANT:
+# Do NOT flash dtbo during first boot test.
+# Wrong dtbo can cause boot-loop or black screen.
+# flash_dtbo;
 
 sleep 1
 ui_print "DONE!"
