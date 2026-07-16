@@ -1,12 +1,15 @@
 ###################################################
-##         Realme X2 Pro Kernel Installer        ##
+##   REALME X2 PRO — OPENELA KERNEL INSTALLER   ##
 ###################################################
-Type:       Kali-NetHunter Kernel
-Kernel:     KernelSU Root Supported
-Version:    4.14.355-openela-perf+KSU
-Author:     ZAHID
-Device:     Realme X2 Pro (Samurai/RMX1931)
-OS:         LineageOS Based Any ROM
+# Kernel:       OpenELA-LTS Samurai Kernel
+# Linux:        4.14.357 OpenELA LTS
+# Root Support: KernelSU Next — BUILT-IN LEGACY
+# KSU Version:  v3.2 Legacy
+# Device:       Realme X2 Pro / RMX1931
+# Codename:     samurai
+# ROM Support:  Android 14 / 15 / 16
+# ROM Base:     LineageOS-based custom ROMs
+# Maintainer:   ZAHIDUL ISLAM
 ###################################################
-##    Appreciate All Dev's for Their Hard Work   ##
+##   AnyKernel3 by osm0sis @ XDA Developers   ##
 ###################################################
